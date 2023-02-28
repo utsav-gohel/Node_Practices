@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
 });
 app.get("/about", (req, res) => {
   request()
-  // ` https://api.openweathermap.org/data/2.5/weather?q=${req.query.name}&APPID=bd9c004059a9f7e98ca58ac52b4e5fec`
+    // ` https://api.openweathermap.org/data/2.5/weather?q=${req.query.name}&APPID=bd9c004059a9f7e98ca58ac52b4e5fec`
     .on("data", (chunk) => {
       const obj = JSON.parse(chunk);
       const arr = [obj];
